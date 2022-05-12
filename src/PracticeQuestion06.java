@@ -6,15 +6,8 @@ import java.util.Scanner;
 
 public class PracticeQuestion06 {
     public static void main(String args[]){
-        Scanner input = new Scanner(System.in);
-        int x = input.nextInt();
-        String data = ((Object)x).getClass().getSimpleName();
-        data = data.toLowerCase();
-        if (data=="integer"){
-            System.out.println("the data u entered is a Integer");
-        }
-        else{
-            System.out.println("the data u entered is not an integer");
-        }
+        System.out.println("Enter your number");
+        Scanner sc = new Scanner(System.in);
+        System.out.println(sc.hasNextInt());
     }
 }
