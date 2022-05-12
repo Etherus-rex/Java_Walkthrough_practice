@@ -7,14 +7,18 @@ public class PracticeQuestion03 {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter the marks for 1st subject : ");
-        float sub1 = input.nextFloat();
+        int sub1 = input.nextInt();
 
         System.out.print("Enter the marks for 2nd Subject : ");
-        float sub2 = input.nextFloat();
+        int sub2 = input.nextInt();
 
         System.out.print("Enter the marks for 3rd subject : ");
-        float sub3 = input.nextFloat();
+        int sub3 = input.nextInt();
 
+        int total = sub1 + sub2 + sub3 ;
 
+        float CGPA = total/30.0f;
+
+        System.out.println("Your CGPA Based on the marks u entered is "+CGPA);
     }
 }
